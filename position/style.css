@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.banner {
+  width: 100%;
+  height: 432px;
+  background: url("./banner.png") no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 127px;
+  padding-bottom: 125px;
+}
+
+.banner__title {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.banner__txt {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.banner_btn {
+  font-family: "Roboto", sans-serif;
+  width: 165px;
+  height: 57px;
+  background-color: transparent;
+  border: 1px solid white;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.course {
+  padding-top: 44px;
+  text-align: center;
+}
+
+.course__txt {
+  font-size: 24px;
+}

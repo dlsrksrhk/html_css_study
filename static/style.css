@@ -1,0 +1,28 @@
+body {
+  height: 5000px;
+}
+
+.parent {
+  width: 600px;
+  height: 600px;
+  background-color: darkgrey;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+}
+
+.bg-red {
+  background-color: red;
+  float: right;
+}
+
+.bg-orange {
+  background-color: orange;
+  float: right;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}

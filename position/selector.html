@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      p.content::before {
+        color: salmon;
+        content: "이 문장은 ";
+      }
+      p.content::after {
+        color: salmon;
+        content: "입니다.";
+      }
+      p.content::first-line {
+        color: cornflowerblue;
+        font-size: 2em;
+      }
+      p.content::selection {
+        background-color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam
+      fuga itaque eum voluptatum asperiores animi. Maiores modi reprehenderit
+      voluptas esse praesentium sed. Asperiores aliquid quaerat architecto
+      repellendus magni nihil!
+    </p>
+    <p class="content">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam
+      fuga itaque eum voluptatum asperiores animi. Maiores modi reprehenderit
+      voluptas esse praesentium sed. Asperiores aliquid quaerat architecto
+      repellendus magni nihil!
+    </p>
+  </body>
+</html>

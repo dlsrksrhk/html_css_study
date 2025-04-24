@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+.header {
+  width: 100%;
+  height: 78px;
+  border-bottom: 1px solid #cccccc;
+  background-color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header__txt {
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+}
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 39px;
+}
+
+.main-gallary {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallary-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.gallay-list__item {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.gallay-list__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.gallay-list__item img {
+  display: block;
+  width: 100%;
+}
+
+.main-txt {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  padding-top: 43px;
+  padding-bottom: 42px;
+}
+
+.main-txt__wrap {
+  width: 603px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.main-txt__title {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 33px;
+}
+
+.main-txt__desc {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 37px;
+}
+
+.main-txt__btn {
+  width: 221px;
+  height: 37px;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

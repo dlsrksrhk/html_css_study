@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 100%;
+  height: 300px;
+  border: 4px solid black;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+}
+
+.red-box:nth-child(1) {
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+
+.child {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.red-box {
+  background-color: rgb(238, 133, 133);
+}
+
+.blue-box {
+  background-color: rgb(80, 80, 240);
+}
+
+.green-box {
+  background-color: rgb(77, 136, 77);
+}
+
+.grey-box {
+  background-color: rgb(180, 178, 178);
+}
+
+.orange-box {
+  background-color: orange;
+}
+
+.purple-box {
+  background-color: rebeccapurple;
+}
