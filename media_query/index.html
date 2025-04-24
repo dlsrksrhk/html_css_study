@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media query</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* 1140 ~ 무한대 까지 적용 */
+      @media all and (min-width: 1140px) {
+        h1 {
+          color: crimson;
+        }
+      }
+
+      /* 0 ~ 1139까지 적용 */
+      @media all and (max-width: 1139px) {
+        h1 {
+          color: rgb(89, 89, 241);
+        }
+      }
+
+      /* 0 ~ 640까지 적용 */
+      @media all and (max-width: 640px) {
+        h1 {
+          color: rgb(223, 89, 241);
+        }
+      }
+
+      @media all and (max-width: 900px) and (orientation: portrait) {
+        h1 {
+          color: rgb(89, 185, 241);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>media query</h1>
+    <p>media query를 사용하여 화면 크기에 따라 스타일을 다르게 적용합니다.</p>
+  </body>
+</html>
