@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 17px 0;
+}
+
+.header__title {
+  font-family: "Rubik", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: #444444;
+}
+
+.nav ul {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  display: flex;
+}
+
+.nav ul li.active {
+  color: #ff9907;
+}
+
+.nav ul li {
+  margin-right: 18px;
+}
+
+.nav ul li:last-child {
+  margin-right: 0;
+}
+
+.hambuger {
+  display: none;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hambuger span {
+  display: block;
+  background-color: #444;
+  height: 5px;
+  margin: 5px 0;
+  transition: all 0.5s;
+}
+
+.hambuger:hover span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hambuger:hover span:nth-child(2) {
+  transform: scale(0);
+}
+
+.hambuger:hover span:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background: url("images/banner.png") center center;
+  background-size: cover;
+
+  font-family: "Lora", serif;
+  font-weight: bold;
+  color: white;
+}
+
+.banner__subtitle {
+  font-size: 27px;
+}
+
+.banner__title {
+  font-size: 45px;
+  margin: 7px 0;
+}
+
+.banner__date {
+  font-size: 22px;
+}
+
+.post {
+  margin-top: 29px;
+  row-gap: 34px;
+  column-gap: 20px;
+}
+
+.post__item {
+  font-family: "Lora", serif;
+  text-align: center;
+}
+
+.post__item img {
+  width: 100%;
+  display: block;
+}
+
+.post__title {
+  font-size: 22px;
+  font-weight: bold;
+
+  margin: 10px 0 8px 0;
+}
+
+.post__date {
+  font-size: 16px;
+  color: #666;
+}
+
+.footer {
+  margin-top: 87px;
+  height: 57px;
+  background-color: #333;
+}
+
+.footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer > div > p {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  color: #c9c9c9;
+}
+
+@media screen and (max-width: 698px) {
+  .nav {
+    display: none;
+  }
+
+  .hambuger {
+    display: block;
+  }
+
+  .banner {
+    height: 350px;
+  }
+
+  .banner__subtitle {
+    font-size: 18px;
+  }
+
+  .banner__title {
+    font-size: 25px;
+  }
+
+  .banner__date {
+    font-size: 16px;
+  }
+}
