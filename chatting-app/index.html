@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatting App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header__line">
+        <img src="images/photo.png" alt="사용자 프로필" />
+        <h1 class="header__name">Sweet Code</h1>
+      </div>
+      <h2 class="header__greet">안녕하세요 Sweet Code님</h2>
+    </header>
+
+    <!-- message list-->
+    <section>
+      <ul>
+        <li>
+          <a
+            class="friends-list"
+            href="#"
+            aria-label="Go to Read Helen's message page"
+          >
+            <div class="friends-list__info">
+              <img src="images/people_1.png" alt="message img 1" />
+              <div class="friends-list__user">
+                <strong class="friends-list__user-name">Helen</strong>
+                <span class="friends-list__user-msg">Okay, Talk soon</span>
+              </div>
+            </div>
+            <div class="friends-list__datetime">
+              <span class="friends-list__time" aria-label="last message time"
+                >2:58 PM</span
+              >
+              <span
+                class="friends-list__badge"
+                aria-label="count to new message"
+                >1</span
+              >
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="friends-list"
+            href="#"
+            aria-label="Go to Read John's message page"
+          >
+            <div class="friends-list__info">
+              <img src="images/people_2.png" alt="message img 2" />
+              <div class="friends-list__user">
+                <strong class="friends-list__user-name">John</strong>
+                <span class="friends-list__user-msg">See you tomorrow!</span>
+              </div>
+            </div>
+            <div class="friends-list__datetime">
+              <span class="friends-list__time" aria-label="last message time"
+                >3:15 PM</span
+              >
+              <span
+                class="friends-list__badge"
+                aria-label="count to new message"
+                >2</span
+              >
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="friends-list"
+            href="#"
+            aria-label="Go to Read Sarah's message page"
+          >
+            <div class="friends-list__info">
+              <img src="images/people_3.png" alt="message img 3" />
+              <div class="friends-list__user">
+                <strong class="friends-list__user-name">Sarah</strong>
+                <span class="friends-list__user-msg">Got it, thanks!</span>
+              </div>
+            </div>
+            <div class="friends-list__datetime">
+              <span class="friends-list__time" aria-label="last message time"
+                >4:20 PM</span
+              >
+              <span
+                class="friends-list__badge"
+                aria-label="count to new message"
+                >3</span
+              >
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="friends-list"
+            href="#"
+            aria-label="Go to Read Mike's message page"
+          >
+            <div class="friends-list__info">
+              <img src="images/people_4.png" alt="message img 4" />
+              <div class="friends-list__user">
+                <strong class="friends-list__user-name">Mike</strong>
+                <span class="friends-list__user-msg"
+                  >Let's catch up later.</span
+                >
+              </div>
+            </div>
+            <div class="friends-list__datetime">
+              <span class="friends-list__time" aria-label="last message time"
+                >5:45 PM</span
+              >
+              <span
+                class="friends-list__badge"
+                aria-label="count to new message"
+                >1</span
+              >
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="friends-list"
+            href="#"
+            aria-label="Go to Read Anna's message page"
+          >
+            <div class="friends-list__info">
+              <img src="images/people_5.png" alt="message img 5" />
+              <div class="friends-list__user">
+                <strong class="friends-list__user-name">Anna</strong>
+                <span class="friends-list__user-msg"
+                  >Thanks for the update!</span
+                >
+              </div>
+            </div>
+            <div class="friends-list__datetime">
+              <span class="friends-list__time" aria-label="last message time"
+                >6:10 PM</span
+              >
+              <span
+                class="friends-list__badge"
+                aria-label="count to new message"
+                >4</span
+              >
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="friends-list"
+            href="#"
+            aria-label="Go to Read David's message page"
+          >
+            <div class="friends-list__info">
+              <img src="images/people_6.png" alt="message img 6" />
+              <div class="friends-list__user">
+                <strong class="friends-list__user-name">David</strong>
+                <span class="friends-list__user-msg"
+                  >Call me when you're free.</span
+                >
+              </div>
+            </div>
+            <div class="friends-list__datetime">
+              <span class="friends-list__time" aria-label="last message time"
+                >7:30 PM</span
+              >
+              <span
+                class="friends-list__badge"
+                aria-label="count to new message"
+                >5</span
+              >
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="friends-list"
+            href="#"
+            aria-label="Go to Read Emily's message page"
+          >
+            <div class="friends-list__info">
+              <img src="images/people_7.png" alt="message img 7" />
+              <div class="friends-list__user">
+                <strong class="friends-list__user-name">Emily</strong>
+                <span class="friends-list__user-msg"
+                  >See you at the meeting.</span
+                >
+              </div>
+            </div>
+            <div class="friends-list__datetime">
+              <span class="friends-list__time" aria-label="last message time"
+                >8:00 PM</span
+              >
+              <span
+                class="friends-list__badge"
+                aria-label="count to new message"
+                >2</span
+              >
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+            class="friends-list"
+            href="#"
+            aria-label="Go to Read Olivia's message page"
+          >
+            <div class="friends-list__info">
+              <img src="images/people_8.png" alt="message img 8" />
+              <div class="friends-list__user">
+                <strong class="friends-list__user-name">Olivia</strong>
+                <span class="friends-list__user-msg">Great job today!</span>
+              </div>
+            </div>
+            <div class="friends-list__datetime">
+              <span class="friends-list__time" aria-label="last message time"
+                >9:15 PM</span
+              >
+              <span
+                class="friends-list__badge"
+                aria-label="count to new message"
+                >1</span
+              >
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <ul class="footer__icon">
+        <li>
+          <a href="#" aria-label="go to chatting">
+            <img src="images/icon_1.png" alt="chatting" />
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="go to my page">
+            <img src="images/icon_2.png" alt="my page" />
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="go to my find page">
+            <img src="images/icon_3.png" alt="find" />
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="go to my more page">
+            <img src="images/icon_4.png" alt="more" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
