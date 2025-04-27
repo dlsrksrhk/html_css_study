@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&family=Sansita+Swashed:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+header .brand-text {
+  font-family: "Sansita Swashed", cursive;
+  font-style: 36px;
+  font-weight: bold;
+}
+
+/* banner */
+.banner {
+  background-color: #f7f7f6;
+}
+
+.banner__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner__item {
+  flex: 0 0 50%;
+  height: 400px;
+}
+
+.banner__bg1 {
+  background: url("./images/bg1.png") no-repeat center center;
+  background-size: cover;
+}
+
+.banner__bg2 {
+  background: url("./images/bg2.png") no-repeat center center;
+  background-size: cover;
+}
+
+.banner__woman {
+  background-color: #b5838d;
+}
+
+.banner__men {
+  background-color: #6d6875;
+}
+
+.banner__txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 111.59px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.banner__txt h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 63px;
+}
+
+.banner__txt p {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* best item */
+.list {
+  background-color: #f7f7f6;
+  padding-top: 39px;
+  padding-bottom: 80px;
+}
+
+.list.new-arrivals {
+  background-color: #fff;
+}
+
+.list__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 39px;
+}
+
+.list__item img {
+  display: block;
+  width: 100%;
+}
+
+.list__item strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.list__item p {
+  font-family: "Poppins", sans-serif;
+}
+
+.list__desc {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.list__price {
+  font-size: 18px;
+  font-weight: 500;
+  color: #b5838d;
+}
+
+.list__btn {
+  text-align: center;
+  margin-top: 56px;
+}
+
+.list__btn button {
+  width: 155px;
+  height: 47px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background-color: #000000;
+  border-radius: 25px;
+}
+
+.list.new-arrivals button {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
+
+/* footer */
+footer {
+  background-color: #f7f7f6;
+}
+
+.footer__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+.footer__item {
+  flex: 0 0 25%;
+  color: white;
+}
+
+.footer__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.footer__item:nth-child(1) {
+  background-color: #ffcdb2;
+}
+
+.footer__item:nth-child(2) {
+  background-color: #ffb4a2;
+}
+
+.footer__item:nth-child(3) {
+  background-color: #e5989b;
+}
+
+.footer__item:nth-child(4) {
+  /* background-color: #6D6875; */
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__item--top {
+  background-color: #6d6875;
+  height: 50%;
+}
+
+.footer__item--list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer__item--list li {
+  margin-right: 10px;
+}
+
+.footer__item--list li:last-child {
+  margin-right: 0;
+}
+
+.footer__item--bottom {
+  background-color: #b5838d;
+  height: 50%;
+}
+
+.footer__item--copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 792px) {
+  .banner__txt {
+    padding-left: 23px;
+    padding-right: 22px;
+  }
+
+  .list__item {
+    margin-bottom: 39px;
+  }
+
+  .list__btn {
+    margin-top: 17px;
+  }
+
+  .footer__item a,
+  .footer__item--copyright {
+    font-size: 18px;
+  }
+
+  .footer__wrap {
+    height: 200px;
+  }
+
+  .footer__item--list img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 574px) {
+  .banner__item {
+    flex: 0 0 100%;
+  }
+
+  .footer__item {
+    flex: 0 0 100%;
+    height: 100px;
+  }
+
+  .footer__item a,
+  .footer__item--copyright {
+    font-size: 16px;
+  }
+}
